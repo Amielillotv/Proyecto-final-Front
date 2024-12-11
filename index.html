@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto final</title>
+  <link rel="stylesheet" href="desktop.css">
+  <link rel="stylesheet" href="tablet.css">
+  <link rel="stylesheet" href="movil.css">
+  <link rel="stylesheet" href="animate.css">
+  <link rel="stylesheet" href="fancybox.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d188054eba.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="fancybox.js"></script>
+  <script src="responsiveslides.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+</head>
+<body>
+
+  <header id="inicio" class="ancho">
+    <nav id="menu" class="ancho head7">
+      <img src="imagenes/logo.png" alt="" class="logo">
+
+        <ul id="contenedor_menu">
+            <li><a class="btn_ancla" href="#">Home</a></li>
+            <li><a class="btn_ancla" href="#quienes77">About us</a></li>
+            <li><a class="btn_ancla" href="#servicios77">Departaments</a></li>
+            <li><a class="btn_ancla" href="#ubicacion77">Doctors</a></li>
+            <li><a class="btn_ancla" href="#contactanos77">Blog</a></li>
+          </li>
+          <li><a class="btn_ancla" href="#contactanosaho">Contact</a></li>
+        </ul>
+        <div id="icono_menu" class="icomen">
+          <i class="fas fa-bars imenu"></i>
+        </div>
+      <div id="abrir_modal_reservacion" class="fechca">
+        <i class="fa-solid fa-calendar-days calender7"></i>
+        <p class="apon">Appointment</p>
+      </div>
+    </nav>
+</header>
+
+<main>
+
+
+  <div class="hero">
+    <!-- Slider -->
+    <div class="hero-slider">
+      <img src="imagenes/slide1.webp" alt="Slide 1" class="slide active">
+      <img src="imagenes/slide2.webp" alt="Slide 2" class="slide">
+      <img src="imagenes/slide3.webp" alt="Slide 2" class="slide">
+    </div>
+  </div>
+  
+    <!-- Contenido del slider -->
+    <div class="hero-content">
+      <h1>For a healtier life</h1>
+      <p>we are at your service for a healthier life.</p>
+      <div class="hero-buttons">
+        <button href="#" class="btn btn-blue" id="boton_modal">Learn More</button>
+      </div>
+    </div>
+
+    <!-- Controles de navegación -->
+    <i class="fa-solid fa-chevron-left control prev"></i>
+    <i class="fa-solid fa-chevron-right control next"></i>
+  </div>
+
+
+
+
+
+
+
+
+  <section id="modal" class="fondomodal">
+    <div class="contenidomodal">
+
+      <br><br>
+      <article class="promociones">
+        <h2 class="ourdepl1">Conoce mas sobre Medidoc:</h2>
+        <br>
+
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/_Ngdc0WrjcI?si=3nHhZxF52-aPyDnR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <div class="alineacion_cerrar">
+          <i id="cerrar_modal" class="cerrarmodal fas fa-times-circle"></i>
+        </div>
+
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Modal form -->
+<div id="modal_reservacion" class="modal-unico">
+  <div class="modal-contenido-unico">
+    <span id="cerrar_modal_reservacion" class="cerrar-unico">&times;</span>
+    <h2 class="ourdepl1">Formulario de Reservación</h2>
+    <form id="form_reservacion" class="form-unico">
+      <label for="nombre" class="camp77">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" class="input-unico" required>
+
+      <label for="email" class="camp77">Correo Electrónico:</label>
+      <input type="email" id="email" name="email" class="input-unico" required>
+
+      <label for="fecha" class="camp77">Fecha de Reserva:</label>
+      <input type="date" id="fecha" name="fecha" class="input-unico" required>
+
+      <label for="hora" class="camp77">Hora de Reserva:</label>
+      <input type="time" id="hora" name="hora" class="input-unico" required>
+
+      <label for="personas" class="camp77">Número de Personas:</label>
+      <input type="number" id="personas" name="personas" class="input-unico" min="1" required>
+
+      <button type="submit" class="btn-submit-unico">Reservar</button>
+    </form>
+  </div>
+</div>
+
+
+<section class="ourdep">
+
+  <article class="services" id="services">
+
+    <h1 class="ourdepl1 wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">Our Departments</h1>
+    <p class="ourdepl wow animate__fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">We provide you the best service with our strong staff and high technology.</p>
+
+    <br />
+
+    <div class="service-list">
+
+      <div class="service wow animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+
+        <div class="iconserv">
+
+          <i class="fa-solid fa-suitcase-medical"></i>
+          
+
+        </div>
+        <p>Urology</p>
+
+
+      </div>
+  
+      <div class="service wow animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+
+        <div class="iconserv">
+
+          <i class="fa-solid fa-user-doctor"></i>
+
+        </div>
+        <p>Gastroenterology</p>
+
+
+      </div>
+  
+      <div class="service wow animate__fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
+
+        <div class="iconserv">
+
+          <i class="fa-solid fa-lungs"></i>
+
+        </div>
+
+        <p>Chest diseases</p>
+
+      </div>
+  
+      <div class="service wow animate__fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
+        <div class="iconserv">
+          <i class="fa-solid fa-heart-pulse"></i>
+</div>
+    
+<p>Cardiac Surgery</p>
+
+</div>
+
+<div class="service wow animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+
+  <div class="iconserv">
+
+    <i class="fa-solid fa-skull"></i>
+
+  </div>
+  <p>Radiology</p>
+
+</div>
+
+<div class="service wow animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+
+  <div class="iconserv">
+
+    <i class="fa-solid fa-tooth"></i>
+
+  </div>
+
+  <p>Dental diseases</p>
+</div>
+
+<div class="service wow animate__fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+
+  <div class="iconserv">
+
+    <i class="fa-solid fa-person-pregnant"></i>
+
+  </div>
+  <p>Gynecology & Obstetrics</p>
+
+</div>
+
+<div class="service wow animate__fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+  <div class="iconserv">
+    <i class="fa-solid fa-brain"></i>
+</div>
+
+<p>Brain Surgery</p>
+</div>
+
+    </div>
+    <a href="#" class="all-departments wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay="0.7s">All Departments</a>
+  </article>
+
+
+</section>
+
+
+<section id="quienes77" class="contenido999">
+
+<article class="contenido9999">
+
+
+<div class="contenedor9012 wow animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
+  <div class="rotating-circle"></div>
+  <img src="imagenes/NewGeneration.webp" alt="Imagen" class="foreground-image">
+</div>
+
+
+</article>
+
+<article class="contenido9999">
+
+  <h1 class="ourdepl11 wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">New Generation High Technology</h1>
+  <br>
+  <p class="ourdepl wow animate__fadeInUp" data-wow-duration="2s" data-wow-delay="0.4s">We provide services in our hospital by moving forward with confidence with constantly renewed technology and future-oriented investments. It receives reports with state-of-the-art devices. We start the treatment by making the correct diagnosis with our specialist physicians.</p>
+  <br>
+  <div class="traCon wow animate__fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
+    <div class="traConi">
+    <i class="fa-solid fa-pump-medical"></i>
+  </div>
+  <div>
+    <h3 class="titaz">Safe Tratament</h3>
+    <p class="titaz1">We treat you safely with our expert staff in the field.</p>
+  </div>
+  </div>
+  <br>
+  <div class="traCon wow animate__fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
+    <div class="traConi">
+      <i class="fa-solid fa-file-waveform"></i>
+  </div>
+  <div>
+    <h3 class="titaz">Safe Tratament</h3>
+    <p class="titaz1">We treat you safely with our expert staff in the field.</p>
+  </div>
+  </div>
+  <a href="#" class="all-departments wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay="0.7s">Get to know us</a>
+
+</article>
+
+</section>
+
+<br><br><br>
+
+<section class="servh1">
+  <div class="mediser">
+    <h2 class="titumedic">Wellnes Center</h2>
+    <br><br>
+    <div class="icohospi">
+      <i class="fa-solid fa-hospital"></i>
+      <div class="circle-spin"></div>
+    </div>
+    <br><br>
+    <p class="titaz1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, dolor! Ducimus est adipisci aliquid doloremque quaerat alias nostrum quae impedit recusandae! Earum ipsa minus rerum deserunt corporis quidem, dolorem dolore!
+    </p>
+  </div>
+
+  <div class="mediser">
+    <h2 class="titumedic">Online Interview</h2>
+    <br><br>
+    <div class="icohospi">
+      <i class="fa-solid fa-house-medical-flag"></i>
+      <div class="circle-spin"></div>
+    </div>
+    <br><br>
+    <p class="titaz1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, dolor! Ducimus est adipisci aliquid doloremque quaerat alias nostrum quae impedit recusandae! Earum ipsa minus rerum deserunt corporis quidem, dolorem dolore!
+    </p>
+  </div>
+
+  <div class="mediser">
+    <h2 class="titumedic">Operations</h2>
+    <br><br>
+    <div class="icohospi">
+      <i class="fa-solid fa-pump-medical"></i>
+      <div class="circle-spin"></div>
+    </div>
+    <br><br>
+    <p class="titaz1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, dolor! Ducimus est adipisci aliquid doloremque quaerat alias nostrum quae impedit recusandae! Earum ipsa minus rerum deserunt corporis quidem, dolorem dolore!
+    </p>
+  </div>
+
+  <div class="mediser">
+    <h2 class="titumedic">Safe Hospital</h2>
+    <br><br>
+    <div class="icohospi">
+      <i class="fa-solid fa-suitcase-medical"></i>
+      <div class="circle-spin"></div>
+    </div>
+    <br><br>
+    <p class="titaz1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, dolor! Ducimus est adipisci aliquid doloremque quaerat alias nostrum quae impedit recusandae! Earum ipsa minus rerum deserunt corporis quidem, dolorem dolore!
+    </p>
+  </div>
+</section>
+
+
+<br><br>
+
+
+
+
+
+
+
+
+
+
+<div id="ubicacion77" class="expert-doctors-container">
+  <div >
+      <h2>Our Expert Doctors</h2>
+      <p>Your health is entrusted to us.</p>
+  </div>
+
+  <section class="expert-doctors-header">
+  <div class="expert-doctors-cards">
+      <div class="expert-doctors-card">
+          <img src="imagenes/doctor1.webp" alt="Doctor 1" class="imagepersona">
+          <div class="expert-doctors-info">
+              <h3>Jack Smith</h3>
+              <p>Urology Doctor</p>
+              <div class="expert-doctors-social-icons">
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a> <!-- Facebook icon -->
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a> <!-- Instagram icon -->
+                  <a href="#"><i class="fa-brands fa-x-twitter"></i></a> <!-- Email icon -->
+              </div>
+          </div>
+      </div>
+      <div class="expert-doctors-card">
+          <img src="imagenes/doctor2.jpg" alt="Doctor 2" class="imagepersona">
+          <div class="expert-doctors-info">
+              <h3>Adam Brown</h3>
+              <p>Gastroenterology Doctor</p>
+              <div class="expert-doctors-social-icons">
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              </div>
+          </div>
+      </div>
+      <div class="expert-doctors-card">
+          <img src="imagenes/doctor3.webp" alt="Doctor 3" class="imagepersona">
+          <div class="expert-doctors-info">
+              <h3>Michael Lee</h3>
+              <p>Chest Diseases Doctor</p>
+              <div class="expert-doctors-social-icons">
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              </div>
+          </div>
+      </div>
+
+   
+  </div>
+</section>
+</div>
+
+<br><br>
+
+
+<h1 id="contactanos77" class="carooo">What Are Our Customers Saying ?</h1>
+<p class="caroooo">Every customer is valuable to us. Here are the reviews of some of our customers who chose us.</p>
+<br>
+  <section id="carousel" class="ancho">
+
+    <div id="slide-container">
+      <article class="slide" data-slideIndex="0">
+
+        <p class="caroooo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat repudiandae saepe suscipit sapiente eius
+          ducimus cum, amet voluptate earum officiis deleniti ratione repellendus debitis blanditiis omnis perferendis
+          aliquid, voluptas ullam!</p>
+      <figure>
+        <img src="imagenes/carousel1.jpg" alt="">
+      </figure>
+      </article>
+
+      <article class="slide" data-slideIndex="1">
+        <p class="caroooo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat repudiandae saepe suscipit sapiente eius
+          ducimus cum, amet voluptate earum officiis deleniti ratione repellendus debitis blanditiis omnis perferendis
+          aliquid, voluptas ullam!</p>
+     <figure>
+      <img src="imagenes/carousel2.png" alt="">
+     </figure>
+      </article>
+
+      <article class="slide" data-slideIndex="2">
+       
+        <p class="caroooo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat repudiandae saepe suscipit sapiente eius
+          ducimus cum, amet voluptate earum officiis deleniti ratione repellendus debitis blanditiis omnis perferendis
+          aliquid, voluptas ullam!</p>
+        <figure>
+          <img src="imagenes/carousel3.jpg" alt="">
+        </figure>
+      </article>
+
+      <article class="slide" data-slideIndex="3">
+       
+        <p class="caroooo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat repudiandae saepe suscipit sapiente eius
+          ducimus cum, ullam!</p>
+        <figure>
+          <img src="imagenes/carousel4.avif" alt="">
+        </figure>
+      </article>
+
+      <article class="slide" data-slideIndex="4">
+ 
+        <p class="caroooo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat repudiandae, amet voluptate earum officiis
+          deleniti ratione repellendus debitis blanditiis omnis perferendis
+          aliquid, voluptas ullam!</p>
+        <img src="imagenes/carousel5.png" alt="">
+      </article>
+
+      <article class="slide" data-slideIndex="5">
+
+        <p class="caroooo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat repudiandae saepe suscipit sapiente eius
+          ducimus cum, amet voluptate earum officiis deleniti ratione repellendus debitis blanditiis omnis perferendis
+          aliquid, voluptas ullam!</p>
+      <figure>
+        <img src="imagenes/carousel1.jpg" alt="">
+      </figure>
+      </article>
+      <article class="slide" data-slideIndex="6">
+       
+        <p class="caroooo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat repudiandae saepe suscipit sapiente eius
+          ducimus cum, amet voluptate earum officiis deleniti ratione repellendus debitis blanditiis omnis perferendis
+          aliquid, voluptas ullam!</p>
+        <figure>
+          <img src="imagenes/carousel3.jpg" alt="">
+        </figure>
+      </article>
+    </div>
+
+    <div class="contenedor_flechas">
+      <a href="#" id="back-button" class="arrow back">
+        <i class="fa-solid fa-chevron-left"></i>
+      </a>
+
+      <a href="#" id="forward-button" class="arrow forward">
+        <i class="fa-solid fa-chevron-right"></i>
+      </a>
+    </div>
+
+    <div class="slide-indicators">
+      <div class="slide-indicator active"></div>
+      <div class="slide-indicator"></div>
+      <div class="slide-indicator"></div>
+      <div class="slide-indicator"></div>
+      <div class="slide-indicator"></div>
+    </div>
+
+  </section>
+
+<br><br><br>
+
+
+
+
+
+
+<div id="servicios77" class="contenedorfinalacor">
+  <h2>Urology</h2>
+  <a href=""><i class="fa-solid fa-arrow-down icono"></i></a>
+</div>
+<div class="contenedor2acord">
+  <img src="imagenes/acordeon1.png" alt="" class="acor777">
+  <br>
+  <p class="caroooo">Our clinic, which has an experienced staff for all examination and treatment procedures of different subgroups of urological diseases, is also available with the state-of-the-art systems required for all closed surgical interventions offered by today’s technology to medical applications.Kidney stones, urinary tract stones, bladder stones Urinary and urinary tract problems Urinary bladder diseases Prostate diseases Kidney, urinary bladder, testis, prostate tumors sexual dysfunctions Anomalies of the urinary tract and genital organs in children Circumcision urinary incontinence Nocturnal urination, diagnosis and treatment in children Image Join Our Newsletter Subscribe to be informed about our services and products. Menu Urology Gastrology Chest Diseases Cardiac Surgery ☆☆☆☆☆ Radiology Dental Diseases Gynecology Brain Surgery</p>
+</div>
+
+
+<div class="contenedorfinalacor">
+  <h2>Gastroenterology</h2>
+  <a href=""><i class="fa-solid fa-arrow-down icono"></i></a>
+</div>
+<div class="contenedor2acord">
+  <img src="imagenes/acordeon2.png" alt="" class="acor777">
+  <br>
+  <p class="caroooo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, aspernatur? Repellendus, sequi aperiam. Excepturi suscipit maiores odio eveniet magni fugiat repudiandae, neque, nesciunt est sapiente eaque animi magnam sed nulla!
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae omnis sequi ad esse totam natus ut vitae ullam quos facilis quaerat eligendi vel qui, possimus exercitationem maiores nisi iure? Sunt?
+  </p>
+</div>
+
+
+<div class="contenedorfinalacor">
+  <h2>Chest Diseases</h2>
+  <a href=""><i class="fa-solid fa-arrow-down icono"></i></a>
+</div>
+<div class="contenedor2acord">
+  <img src="imagenes/acordeon3.png" alt="" class="acor777">
+  <br>
+  <p class="caroooo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, aspernatur? Repellendus, sequi aperiam.</p>
+</div>
+
+<div class="contenedorfinalacor">
+  <h2>Cardiac Surgery</h2>
+  <a href=""><i class="fa-solid fa-arrow-down icono"></i></a>
+</div>
+<div class="contenedor2acord">
+  <img src="imagenes/acordeon4.png" alt="" class="acor777">
+  <br>
+  <p class="caroooo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, aspernatur? Repellendus, sequi aperiam.</p>
+</div>
+
+<div class="contenedorfinalacor">
+  <h2>Radiology</h2>
+  <a href=""><i class="fa-solid fa-arrow-down icono"></i></a>
+</div>
+<div class="contenedor2acord">
+  <img src="imagenes/acordeon5.png" alt="" class="acor777">
+  <br>
+  <p class="caroooo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, aspernatur? Repellendus, sequi aperiam.</p>
+</div>
+
+<div class="contenedorfinalacor">
+  <h2>Dental Diseases</h2>
+  <a href=""><i class="fa-solid fa-arrow-down icono"></i></a>
+</div>
+<div class="contenedor2acord">
+  <img src="imagenes/acordeon6.png" alt="" class="acor777">
+  <br>
+  <p class="caroooo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, aspernatur? Repellendus, sequi aperiam.</p>
+</div>
+
+<div class="contenedorfinalacor">
+  <h2>Gynecology & Obstetrics</h2>
+  <a href=""><i class="fa-solid fa-arrow-down icono"></i></a>
+</div>
+<div class="contenedor2acord">
+  <img src="imagenes/acordeon7.png" alt="" class="acor777">
+  <br>
+  <p class="caroooo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, aspernatur? Repellendus, sequi aperiam.</p>
+</div>
+
+
+<div class="contenedorfinalacor">
+  <h2>Brain Surgery</h2>
+  <a href=""><i class="fa-solid fa-arrow-down icono"></i></a>
+</div>
+<div class="contenedor2acord">
+  <img src="imagenes/acordeon8.png" alt="" class="acor777">
+  <br>
+  <p class="caroooo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, aspernatur? Repellendus, sequi aperiam.</p>
+</div>
+
+
+
+
+<br><br><br>
+
+
+
+
+
+
+<div class="contenedor_fotos margen ancho">
+
+  <a data-fancybox="gallery" data-src="imagenes/galeria1.png" data-caption="FOTO 1 GALERIA">
+    <figure>
+      <img src="imagenes/galeria1.png"alt="" />
+    </figure>
+  </a>
+
+  <a data-fancybox="gallery" data-src="imagenes/galeria2.webp" data-caption="FOTO 2 GALERIA">
+    <figure>
+      <img src="imagenes/galeria2.webp"alt="" />
+    </figure>
+  </a>
+
+  <a data-fancybox="gallery" data-src="imagenes/galeria3.webp" data-caption="FOTO 3 GALERIA">
+    <figure>
+      <img src="imagenes/galeria3.webp" alt="" />
+    </figure>
+  </a>
+
+  <a data-fancybox="gallery" data-src="imagenes/galeria1.png" data-caption="FOTO 4 GALERIA">
+    <figure>
+      <img src="imagenes/galeria1.png"alt="" />
+    </figure>
+  </a>
+
+  <a data-fancybox="gallery" data-src="imagenes/galeria2.webp">
+    <figure>
+      <img src="imagenes/galeria2.webp"" alt="" />
+    </figure>
+  </a>
+
+  <a data-fancybox="gallery" data-src="imagenes/galeria3.webp">
+    <figure>
+      <img src="imagenes/galeria3.webp" alt="" />
+    </figure>
+  </a>
+
+</div>
+
+
+
+
+
+
+
+
+
+</main>
+
+
+<button id="backToTop" class="back-to-top"><i class="fa-solid fa-chevron-up"></i></button>
+
+
+<footer id="custom-footer">
+  <div id="contactanosaho" class="footer-container">
+
+    <!-- Logo y Contacto -->
+    <div class="footer-logo">
+      <h2>Medidoc</h2>
+      <p>Medical & Doctor</p>
+      <ul>
+        <li><i class="fa-solid fa-location-dot"></i> New Jersey, USA</li>
+        <li><i class="fa-solid fa-phone"></i> +1 (234) 567 89 10</li>
+        <li><i class="fa-solid fa-envelope"></i> example@example.com</li>
+      </ul>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="footer-newsletter">
+      <h3>Join Our Newsletter</h3>
+      <p>Subscribe to our e-newsletter to be informed about important health information.</p>
+      <form action="#">
+        <input type="email" placeholder="Your Email Address" />
+        <button type="submit">Subscribe →</button>
+      </form>
+    </div>
+
+    <!-- Links -->
+    <div class="footer-links">
+      <div>
+        <h3>Departments</h3>
+        <ul>
+          <li>Urology</li>
+          <li>Gastroenterology</li>
+          <li>Chest Diseases</li>
+          <li>Cardiac Surgery</li>
+          <li>Dental Diseases</li>
+          <li>Gynecology</li>
+          <li>Brain Surgery</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Blog</li>
+          <li>Doctors</li>
+          <li>All Departments</li>
+          <li>Contact</li>
+          <li>Appointment</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2024 Medidoc - All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+
+
+<script>
+
+  // abrir menu
+  $("#icono_menu").click(function () {
+      $("#contenedor_menu").toggleClass('abrir_menu');
+  });
+
+  // despues de click menu cierra menu
+  $(".btn_ancla").click(function () {
+      $("#contenedor_menu").toggleClass("abrir_menu");
+  });
+
+
+</script>
+
+
+
+
+  <!-- FUNCIONES JAVASCRIPT -->
+  <script>
+
+    $("#boton_modal").click(function () {
+      $("#modal").addClass("mostrar");
+    })
+
+    $("#cerrar_modal").click(function () {
+      $("#modal").removeClass("mostrar");
+    })
+
+
+
+    // click por fuera
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        $("#modal").removeClass("mostrar");
+      }
+    };
+
+    // click tecla ESC
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') {
+        $("#modal").removeClass("mostrar");
+      }
+    });
+
+
+
+
+  </script>
+
+
+
+  <script>
+    // Abrir el modal
+    document.getElementById("abrir_modal_reservacion").addEventListener("click", function () {
+      document.getElementById("modal_reservacion").style.display = "block";
+    });
+  
+    // Cerrar el modal
+    document.getElementById("cerrar_modal_reservacion").addEventListener("click", function () {
+      document.getElementById("modal_reservacion").style.display = "none";
+    });
+  
+    // Cerrar el modal al hacer clic fuera del contenido
+    window.addEventListener("click", function (event) {
+      if (event.target == document.getElementById("modal_reservacion")) {
+        document.getElementById("modal_reservacion").style.display = "none";
+      }
+    });
+  
+    // Validar formulario
+    document.getElementById("form_reservacion").addEventListener("submit", function (event) {
+      event.preventDefault();
+  
+      let nombre = document.getElementById("nombre").value.trim();
+      let email = document.getElementById("email").value.trim();
+      let fecha = document.getElementById("fecha").value;
+      let hora = document.getElementById("hora").value;
+      let personas = document.getElementById("personas").value;
+  
+      if (!nombre) {
+        alert("Por favor, ingresa tu nombre.");
+        return;
+      }
+  
+      if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        alert("Por favor, ingresa un correo electrónico válido.");
+        return;
+      }
+  
+      if (!fecha) {
+        alert("Por favor, selecciona una fecha.");
+        return;
+      }
+  
+      if (!hora) {
+        alert("Por favor, selecciona una hora.");
+        return;
+      }
+  
+      if (!personas || personas <= 0) {
+        alert("Por favor, ingresa un número válido de personas.");
+        return;
+      }
+  
+      alert("Reservación realizada con éxito.");
+      document.getElementById("modal_reservacion").style.display = "none";
+    });
+  </script>
+
+
+
+
+
+<script>
+  $(function () {
+  window.addEventListener("scroll", function () {
+    const backToTopButton = document.getElementById("backToTop");
+    if (window.scrollY > 200) {
+      backToTopButton.classList.add("show");
+    } else {
+      backToTopButton.classList.remove("show");
+    }
+  });
+
+  document
+    .getElementById("backToTop")
+    .addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+});
+</script>
+
+
+
+
+
+
+
+<script>
+  $(document).ready(function () {
+    // Menú desplegable
+    $(".menudes").click(function () {
+      $(".menu").slideToggle();
+    });
+  
+    // Selección de elementos hero slider
+    const slider = document.querySelector('.hero-slider');
+    const slides = document.querySelectorAll('.hero-slider img');
+    const prevBtn = document.querySelector('.control.prev');
+    const nextBtn = document.querySelector('.control.next');
+    let currentIndex = 0;
+  
+    // Variables para manejar los gestos táctiles
+    let startX = 0;
+    let endX = 0;
+  
+    // Función para mostrar un slide específico
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.remove('active');
+        if (i === index) {
+          slide.classList.add('active');
+        }
+      });
+    }
+  
+    // Función para mostrar el slide anterior
+    function showPrevSlide() {
+      currentIndex = (currentIndex - 1 + slides.length) % slides.length; // Cicla hacia atrás
+      showSlide(currentIndex);
+    }
+  
+    // Función para mostrar el siguiente slide
+    function showNextSlide() {
+      currentIndex = (currentIndex + 1) % slides.length; // Cicla hacia adelante
+      showSlide(currentIndex);
+    }
+  
+    // Eventos para las flechas
+    prevBtn.addEventListener('click', () => {
+      clearInterval(autoPlayInterval); // Pausa auto-play temporalmente
+      showPrevSlide();
+      startAutoPlay(); // Reinicia el auto-play
+    });
+  
+    nextBtn.addEventListener('click', () => {
+      clearInterval(autoPlayInterval); // Pausa auto-play temporalmente
+      showNextSlide();
+      startAutoPlay(); // Reinicia el auto-play
+    });
+  
+    // Manejo de gestos táctiles en el contenedor del slider
+    slider.addEventListener('touchstart', (e) => {
+      startX = e.touches[0].clientX; // Captura la posición inicial del toque
+    });
+  
+    slider.addEventListener('touchend', (e) => {
+      endX = e.changedTouches[0].clientX; // Captura la posición final del toque
+      const deltaX = endX - startX;
+  
+      if (deltaX > 50) {
+        // Deslizar hacia la derecha (slide anterior)
+        clearInterval(autoPlayInterval);
+        showPrevSlide();
+        startAutoPlay();
+      } else if (deltaX < -50) {
+        // Deslizar hacia la izquierda (slide siguiente)
+        clearInterval(autoPlayInterval);
+        showNextSlide();
+        startAutoPlay();
+      }
+    });
+  
+    // Auto-play: Cambia automáticamente al siguiente slide
+    let autoPlayInterval;
+  
+    function startAutoPlay() {
+      autoPlayInterval = setInterval(showNextSlide, 3000);
+    }
+  
+    function stopAutoPlay() {
+      clearInterval(autoPlayInterval);
+    }
+  
+    // Inicia el auto-play
+    startAutoPlay();
+  
+    // Detener auto-play al pasar el mouse sobre el slider
+    slider.addEventListener('mouseenter', stopAutoPlay);
+  
+    // Reanudar auto-play al quitar el mouse del slider
+    slider.addEventListener('mouseleave', startAutoPlay);
+  });  
+  
+    
+
+
+  
+
+</script>
+
+<script>
+  $(function () {
+
+  new WOW({
+    boxClass: 'wow',            // clase de elementos a animar
+    animateClass: 'animate__animated',  // clase de animación predeterminada
+    offset: 100,                 // distancia para activar la animación
+    mobile: true,                // activa la animación en móviles
+    live: true                   // detecta elementos nuevos añadidos al DOM
+  }).init();
+
+
+});
+</script>
+
+<script src="carousel.js"></script>
+
+<script>
+  $(".contenedorfinalacor").click(function() {
+    var t = $(this);
+    var tp = t.next();
+    tp.slideToggle();
+  });
+</script>
+
+<script>
+  //funcion de fancybox para galeria de fotos
+  Fancybox.bind('[data-fancybox="gallery"]', {
+  });
+
+</script>
+
+  
+</body>
+</html>

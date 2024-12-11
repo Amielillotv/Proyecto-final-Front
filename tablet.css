@@ -1,0 +1,111 @@
+:root {
+  --font-primary: 'Poppins', sans-serif;
+  --font-secondary: 'Roboto', sans-serif;
+  --color-primary: #07afe0;
+  --color-secondary: #B2E2FB;
+  --color-text-primary: #333333;
+  --color-text-secondary: #666666;
+  --color-background: #FFFFFF;
+  --color-background-alt: #F7FBFF;
+  --color-hover: #1478C1;
+  --color-hover2: #5cd1af;
+  --color-back2: #f3f7fa;
+  --color-title77: #2cbec9;
+
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 32px;
+
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Responsivo */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .ancho {
+    max-width: 768px;
+    margin: auto;
+  }
+  .head7 {
+    background-color: var(--color-background);
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo {
+    max-width: 200px; 
+  }
+
+  .imenu {
+    color: var(--color-text-secondary);
+    font-size: 40px;
+  }
+  
+  nav {
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px;
+    position: relative;
+    padding: 15px;
+  }
+  nav ul {
+    list-style: none;
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0;
+    position: absolute;
+    top: 0%;
+    width: 50%;
+    height: 570%;
+    left: -1020%;
+    z-index: 100;
+    transition: all 0.5s linear;
+  }
+  nav ul li {
+    padding: 5px 0px;
+    width: 100%;
+    border-bottom: 2px;
+  }
+  nav ul li a {
+    width: 100%;
+    text-decoration: none;
+    color: var(--color-text-primary);
+  }
+  nav ul li a:hover {
+    background: #2a2d33;
+  }
+  #icono_menu {
+    display: flex;
+  }
+  nav ul.abrir_menu {
+    left: 0;
+  }
+  nav ul.cerrar_menu {
+    left: -120%;
+  }
+
+
+
+  .contenidomodal {
+    width: 95%;
+    padding: 10px;
+  }
+  .cerrarmodal {
+    right: 20px;
+  }
+}
+
